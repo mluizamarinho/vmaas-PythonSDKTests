@@ -5,10 +5,10 @@ from vmware.vapi.lib.connect import get_requests_connector
 from vmware.vapi.security.session import create_session_security_context
 from vmware.vapi.security.user_password import create_user_password_security_context
 from vmware.vapi.stdlib.client.factories import StubConfigurationFactory
-from createSessionOperations.calculateBackUpImage import calculateBackUpImage
-from createSessionOperations.listStorageConsumption import listStorageConsumption
-from createSessionOperations.healthChecker import healthChecker
-from createSessionOperations.checkDatabase import checkDatabase
+from tests.checkDatabase import checkDatabase
+from tests.checkHealth import healthChecker
+from tests.listStorageConsumption import listStorageConsumption
+from tests.calculateBackUpImage import calculateBackUpImage
 
 def createSession(vcip, user, pwd):
     # Create a session object in the client.
